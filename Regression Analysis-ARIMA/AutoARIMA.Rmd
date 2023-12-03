@@ -1,0 +1,32 @@
+---
+title: "RB-f1-pointpred"
+output: html_document
+date: "2023-12-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(forecast)
+library(ggplot2)
+rb.data = read.csv('/Users/ronnieasatourian/Desktop/F1 Case/Rb-points.csv')
+
+rb.data.ts = ts(rb.data$IndividualPoints, start = c(2005, 1), end = c(2023,12), freq = 12)
+
+fit = auto.arima(rb.data.ts)
+forecast_pred = forecast(fit, h = 12)
+annual.average.prediction = forecast_pred$mean
+annual.average.prediction[1] = 0
+annual.average.prediction[2] = 0
+
+
+display.real.data = window(rb.data.ts, start = c(2021,1), end = c(2023, 12))
+
+autoplot(display.real.data ,ylab='Team Points') +
+autolayer(annual.average.prediction,series = 'Prediction') 
+annual.average.prediction
+
+```
+
