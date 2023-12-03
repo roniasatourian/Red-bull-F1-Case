@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20233.23.1017.0948                               -->
-<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='mac' version='18.1' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
@@ -20,6 +20,7 @@
     <WorksheetBackgroundTransparency />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='Red-Bull-Case' path='/t/redbullf1case/workbooks' revision='1.0' site='redbullf1case' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -34,7 +35,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BigQuery' name='bigquery.13h8lpz10h4z4h1d8mz6l0mz61ak (copy)'>
-            <connection CATALOG='red-bull-case-1' EXECCATALOG='red-bull-case-1' authentication='oauth' class='bigquery' connection-dialect='google-sql' project='Red-Bull-Case-1' schema='redbull' server-oauth='' username='ronnieasatourian@gmail.com' />
+            <connection CATALOG='red-bull-case-1' EXECCATALOG='red-bull-case-1' authentication='oauth' class='bigquery' connection-dialect='google-sql' project='Red-Bull-Case-1' schema='redbull' server-oauth='server-custom' username='ronnieasatourian@gmail.com' workgroup-auth-mode='prompt' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='bigquery.13h8lpz10h4z4h1d8mz6l0mz61ak (copy)' name='driver_dim' table='[red-bull-case-1.redbull].[driver_dim]' type='table' />
@@ -1169,7 +1170,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BigQuery' name='bigquery.13h8lpz10h4z4h1d8mz6l0mz61ak'>
-            <connection CATALOG='red-bull-case-1' EXECCATALOG='red-bull-case-1' authentication='oauth' class='bigquery' connection-dialect='google-sql' project='Red-Bull-Case-1' schema='redbull' server-oauth='' username='ronnieasatourian@gmail.com' />
+            <connection CATALOG='red-bull-case-1' EXECCATALOG='red-bull-case-1' authentication='oauth' class='bigquery' connection-dialect='google-sql' project='Red-Bull-Case-1' schema='redbull' server-oauth='server-custom' username='ronnieasatourian@gmail.com' workgroup-auth-mode='prompt' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='bigquery.13h8lpz10h4z4h1d8mz6l0mz61ak' name='driver_dim' table='[red-bull-case-1.redbull].[driver_dim]' type='table' />
@@ -2101,7 +2102,7 @@
             </dictionary>
           </manual-sort>
           <filter class='categorical' column='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:Description (season_dim):nk]' filter-group='3'>
-            <groupfilter function='member' level='[none:Description (season_dim):nk]' member='&quot;Formula 1 2020&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Description (season_dim):nk]' member='&quot;Formula 1 2019&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:TeamName:nk]' filter-group='4'>
             <groupfilter function='member' level='[none:TeamName:nk]' member='&quot;Red Bull Racing&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
@@ -2369,7 +2370,7 @@
             <column-instance column='[IndividualPoints]' derivation='Sum' name='[sum:IndividualPoints:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:Description (season_dim):nk]' filter-group='3'>
-            <groupfilter function='member' level='[none:Description (season_dim):nk]' member='&quot;Formula 1 2020&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Description (season_dim):nk]' member='&quot;Formula 1 2019&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:TeamName:nk]' filter-group='4'>
             <groupfilter function='member' level='[none:TeamName:nk]' member='&quot;Red Bull Racing&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
@@ -2444,7 +2445,7 @@
             <column-instance column='[IndividualPoints]' derivation='Sum' name='[sum:IndividualPoints:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:Description (season_dim):nk]' filter-group='3'>
-            <groupfilter function='member' level='[none:Description (season_dim):nk]' member='&quot;Formula 1 2020&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Description (season_dim):nk]' member='&quot;Formula 1 2019&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:TeamName:nk]' filter-group='4'>
             <groupfilter function='member' level='[none:TeamName:nk]' member='&quot;Red Bull Racing&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
@@ -2456,6 +2457,10 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[Longitude (generated)]' field-type='quantitative' max='41649894.346556842' min='-23941635.029126063' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[Latitude (generated)]' field-type='quantitative' max='35535267.52744244' min='-35535267.527442448' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
           <style-rule element='map'>
             <format attr='washout' value='0.0' />
           </style-rule>
@@ -2642,9 +2647,9 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98380' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='810'>
-            <zone h='98380' id='5' type-v2='layout-basic' w='99064' x='468' y='810'>
-              <zone h='18940' id='3' name='Sheet 2 (2)' w='99064' x='468' y='810'>
+          <zone h='98476' id='7' param='horz' type-v2='layout-flow' w='99166' x='417' y='762'>
+            <zone h='98476' id='5' type-v2='layout-basic' w='99166' x='417' y='762'>
+              <zone h='18958' id='3' name='Sheet 2 (2)' w='99166' x='417' y='762'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2652,7 +2657,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='36139' id='10' name='Sheet 6' w='99064' x='468' y='19750'>
+              <zone h='36174' id='10' name='Sheet 6' w='99166' x='417' y='19720'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2660,7 +2665,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='43301' id='12' name='Sheet 7' w='99064' x='468' y='55889'>
+              <zone h='43344' id='12' name='Sheet 7' w='99166' x='417' y='55894'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2685,8 +2690,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='950' minheight='950' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98118' id='31' param='vert' type-v2='layout-flow' w='99064' x='468' y='941'>
+            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98380' id='33' param='vert' type-v2='layout-flow' w='99064' x='468' y='810'>
                 <zone h='6478' id='9' mode='dropdown' name='Sheet 2 (2)' param='[federated.1ipz4c312wdt2p14rf5gc197rp5s (copy)].[none:TeamName:nk]' type-v2='filter' w='16800' x='63073' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2705,7 +2710,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='143' h='18892' id='3' is-fixed='true' name='Sheet 2 (2)' w='99064' x='468' y='941'>
+                <zone fixed-size='144' h='18940' id='3' is-fixed='true' name='Sheet 2 (2)' w='99064' x='468' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2714,7 +2719,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='36043' id='10' is-fixed='true' name='Sheet 6' w='99064' x='468' y='19833'>
+                <zone fixed-size='280' h='36139' id='10' is-fixed='true' name='Sheet 6' w='99064' x='468' y='19750'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2732,7 +2737,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='43183' id='12' is-fixed='true' name='Sheet 7' w='99064' x='468' y='55876'>
+                <zone fixed-size='280' h='43301' id='12' is-fixed='true' name='Sheet 7' w='99064' x='468' y='55889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2768,9 +2773,9 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98380' id='7' param='horz' type-v2='layout-flow' w='98946' x='527' y='810'>
-            <zone h='98380' id='5' type-v2='layout-basic' w='98946' x='527' y='810'>
-              <zone h='13454' id='3' name='Sheet 2' w='49472' x='527' y='810'>
+          <zone h='98476' id='7' param='horz' type-v2='layout-flow' w='99166' x='417' y='762'>
+            <zone h='98476' id='5' type-v2='layout-basic' w='99166' x='417' y='762'>
+              <zone h='13466' id='3' name='Sheet 2' w='49581' x='417' y='762'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2778,7 +2783,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='98380' id='10' name='Sheet 4' w='49474' x='49999' y='810'>
+              <zone h='98476' id='10' name='Sheet 4' w='49585' x='49998' y='762'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2786,7 +2791,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='49190' id='11' name='Sheet 3' w='49472' x='527' y='50000'>
+              <zone h='49238' id='11' name='Sheet 3' w='49581' x='417' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2794,7 +2799,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='35736' id='12' name='Sheet 1' w='49472' x='527' y='14264'>
+              <zone h='35772' id='12' name='Sheet 1' w='49581' x='417' y='14228'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2812,7 +2817,7 @@
           </zone-style>
         </zone>
         <zone fixed-size='152' h='5567' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='15220' x='84086' y='506'>
-          <zone fixed-size='45' h='5365' id='8' is-fixed='true' mode='dropdown' name='Sheet 2' param='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:Description (season_dim):nk]' type-v2='filter' w='15220' x='84086' y='506'>
+          <zone fixed-size='45' h='5048' id='8' is-fixed='true' mode='dropdown' name='Sheet 2' param='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:Description (season_dim):nk]' type-v2='filter' w='15220' x='84086' y='506'>
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -2827,9 +2832,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98118' id='37' param='vert' type-v2='layout-flow' w='99064' x='468' y='941'>
-                <zone fixed-size='45' h='5567' id='8' mode='dropdown' name='Sheet 2' param='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:Description (season_dim):nk]' type-v2='filter' w='15220' x='84086' y='506'>
+            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98380' id='39' param='vert' type-v2='layout-flow' w='98946' x='527' y='810'>
+                <zone fixed-size='45' h='5365' id='8' mode='dropdown' name='Sheet 2' param='[federated.1ipz4c312wdt2p14rf5gc197rp5s].[none:Description (season_dim):nk]' type-v2='filter' w='15220' x='84086' y='506'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2847,7 +2852,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='99' h='13419' id='3' is-fixed='true' name='Sheet 2' w='49531' x='468' y='941'>
+                <zone fixed-size='100' h='13454' id='3' is-fixed='true' name='Sheet 2' w='49472' x='527' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2856,7 +2861,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='98118' id='10' is-fixed='true' name='Sheet 4' w='49533' x='49999' y='941'>
+                <zone fixed-size='280' h='98380' id='10' is-fixed='true' name='Sheet 4' w='49474' x='49999' y='810'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2865,7 +2870,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='277' h='35640' id='12' is-fixed='true' name='Sheet 1' w='49531' x='468' y='14360'>
+                <zone fixed-size='278' h='35736' id='12' is-fixed='true' name='Sheet 1' w='49472' x='527' y='14264'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2874,7 +2879,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='49059' id='11' is-fixed='true' name='Sheet 3' w='49531' x='468' y='50000'>
+                <zone fixed-size='280' h='49190' id='11' is-fixed='true' name='Sheet 3' w='49472' x='527' y='50000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2897,7 +2902,7 @@
       <simple-id uuid='{240DCB19-A446-4A96-899B-5190406567F7}' />
     </dashboard>
   </dashboards>
-  <windows source-height='51'>
+  <windows pres-mode='true' source-height='51'>
     <window class='worksheet' name='Sheet 1' tab-color='#f66273'>
       <cards>
         <edge name='left'>
@@ -3101,7 +3106,7 @@
       </cards>
       <simple-id uuid='{6A0A8DED-BE96-442C-B071-18837168153E}' />
     </window>
-    <window class='dashboard' maximized='true' name='Team Driver Performance'>
+    <window class='dashboard' maximized='true' name='Team Driver Performance' tab-color='#17927d'>
       <viewpoints>
         <viewpoint name='Sheet 2 (2)' />
         <viewpoint name='Sheet 6'>
@@ -3111,7 +3116,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='9' />
+      <active id='8' />
       <simple-id uuid='{2558D412-DB14-4360-90CB-E46DCF38F53C}' />
     </window>
   </windows>
