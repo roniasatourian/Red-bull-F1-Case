@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(forecast)
 library(ggplot2)
-rb.data = read.csv('/Users/ronnieasatourian/Desktop/F1 Case/Rb-points.csv')
+rb.data = read.csv('/Users/ronnieasatourian/Desktop/F1 Case/Regression Analysis-ARIMA/Rb-points.csv')
 
 rb.data.ts = ts(rb.data$IndividualPoints, start = c(2005, 1), end = c(2023,12), freq = 12)
 
